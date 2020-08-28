@@ -21,15 +21,12 @@ $(function(){
         //     console.log(err);
         // })
     //async+await，是目前最最最优雅的异步解决方案。  
-   let res=await axios.post("/user/login",{
-        account,
-        password
-    } )
-    if(parseInt(res.code) === 0){
+   let res=await axios.post("/user/login",{account,password})
+    if(parseInt(res.code) == 0){
         alert("登陆成功")
         window.location.href = "index.html"
         return
-       // 111
+      
     }
     alert("用户名和密码出错了")
     })
