@@ -29,6 +29,7 @@ $(function(){
         alert("登陆成功")
         window.location.href = "index.html"
         return
+       // 111
     }
     alert("用户名和密码出错了")
     })

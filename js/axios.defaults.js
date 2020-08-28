@@ -34,6 +34,6 @@ axios.interceptors.response.use(response =>{
                     break;
               }
           }
-          //返回一个失败的promise
+          //返回一个失败的promiss
           return Promise.reject(reason)
       })
