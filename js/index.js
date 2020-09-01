@@ -51,7 +51,7 @@ $(function(){
 				</h3>
 				<nav class="item">
 					<a href="page/departmentlist.html" target="iframeBox">部门列表</a>
-					<a href="page/departmentadd.html" target="iframeBox">部门员工</a>
+					<a href="page/departmentadd.html" target="iframeBox">添加部门</a>
 				</nav>
 			</div>
             `
