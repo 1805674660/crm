@@ -96,11 +96,12 @@ $(function(){
         if(arr.length === 0 ){
             alert("你需要先选中一些用户")
             return
-        }
+        } 
+        let index =-1
+        deleteUser()
         //利用递归遍历arr
-        let index = -1
         async function deleteUser(){
-            let userId = [++index]
+            let userId = arr[++index]
             //递归出口
             if(index>=arr.length){
                 alert("已删除员工~")
@@ -111,7 +112,7 @@ $(function(){
             if(result.code !==0) return
             deleteUser()//递归
         }
-        deleteUser()
+    
     })
     //单选删除功能
     $("tbody").on("click","#sc",async function(){

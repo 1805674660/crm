@@ -18,7 +18,7 @@
 		<div class="form">
 			<div class="inpBox">
 				<span>职务名称</span>
-				<input type="text">
+				<input type="text" class="zhiwu">
 			</div>
 			<span></span>
 		</div>
@@ -26,13 +26,13 @@
 		<div class="form">
 			<div class="inpBox">
 				<span>职务描述</span>
-				<textarea></textarea>
+				<textarea class="miaoshu"></textarea>
 			</div>
 			<span></span>
 		</div>
 
 		<div class="form">
-			<div class="inpBox">
+			<div class="inpBox3">
 				<span>拥有权限</span>
 				<input type="checkbox" name="job" value="userhandle" id="userhandle"><label for="userhandle">员工操作权</label>
 				<input type="checkbox" name="job" value="departhandle" id="departhandle"><label for="departhandle">部门操作权</label>
@@ -46,6 +46,11 @@
 		<button class="submit">确认提交</button>
 	</div>
 	<!-- IMPORT JS -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/axios.min.js"></script>
+	<script src="../js/axios.defaults.js"></script>
+	<script src="../js/utils.js"></script>
+	<script src="../js/jobadd.js"></script>
 </body>
 
 </html>

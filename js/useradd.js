@@ -2,7 +2,7 @@ $(function(){
 
     //根据id区分 按钮是新增还是编辑
     let userId = null
-    // console.dir(window.location.href)
+    //console.dir(window.location.href)
     let params = window.location.href.queryURLParams()
    console.log(params);
    //根据有无id进行回显
@@ -107,6 +107,7 @@ $(function(){
         $(".spanuserphone").html("")
         return true
     }
+
     $(".username").blur(checkname)
     //验证邮箱
     $(".useremail").blur(checkemail)
