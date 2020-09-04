@@ -26,4 +26,30 @@ $(function(){
     })
     $("tbody").html(str)
      }
+     delegete()
+     function delegete(){
+         $("tbody").on("click","a",async e=>{
+             let target = e.target
+             tag = target.tagName
+             text = target.innerHTML.trim()
+            if(tag === "A"){
+                let jobId = $(target).parent().attr("jobId")
+                if(text === "编辑"){
+                    window.location.href = `jobadd.html?id=${jobId}`
+                    return
+                }
+                if(text ==="删除"){
+                    if(confirm("你确定删除吗？")){
+                        //console.log(params); 
+                       let result1 =await axios.get("/job/delete",{params:{jobId}})
+                        if(result1.code !==0) return
+                        alert("删除成功")
+                        showjobList()
+                        return
+                    }
+                    return
+                }
+            }
+         })
+     }
 })
